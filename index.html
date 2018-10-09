@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mortgage Calculator</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" charset="utf-8"> 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#">Mortgage Calculator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+<header>
+	<div class="house-img">
+		<h1>Mortgage Calculator</h1>
+	</div>
+</header>
+<div class="calcultorSection">
+    <div class="container">
+        <div class="mortContainer">
+        <h3 class="text-center">Mortgage Calculator</h3>
+            <form name="loandata">
+                <div class="form-group">
+                    
+                    <input type="text" class="form-control commas" name="principal" placeholder="Cost of House" required onchange="calculate();"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control commas" name="downPayment" placeholder="Down Payment" required onchange="calculate();"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="interest" placeholder="APR (Interest)" required onchange="calculate();"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="years" placeholder="Period (How Many Years)" required onchange="calculate();"/>
+                </div>
+
+                <input class="btn btn-primary btn-lg" value="Calculate Payments" onclick="calculate();">
+                <hr>
+                <h3>Payment Results</h3>
+                <p><strong>Total Monthly Payments:<span id="payment"></span></strong></p>
+                <p><strong>Total Payments:<span id="total"></span></strong></p>
+                <p><strong>Total Interest Payments:<span id="totalinterest"></span></strong></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+</script>
+</body>
+</html>

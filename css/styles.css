@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; src: url()}
+body, html {
+	padding: 0;
+	margin: 0;
+	color: #515151;
+	letter-spacing: .1em;
+}
+
+header {
+	width: 100%;
+	height: 760px;
+}
+
+.nav-default {
+    background-color: #515151 !important;
+}
+
+.no-spinners {
+  -moz-appearance:textfield;
+}
+
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.house-img {
+	width: 100%;
+	height: 760px;
+	background-image: url(../img/StockSnap_CF85ZQV5A9.jpg);
+	background-size: cover;
+	background-position: center;
+	position: fixed;
+	z-index: -1;
+}
+
+.house-img h1 {
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 300px;
+	font-size: 5em;
+}
+
+.calcultorSection {
+	width: 100%;
+	height: 1000px;
+	padding-top: 100px;
+	background-color: #fff;
+	
+}
+	
+.mortContainer {
+	width: 500px;
+	margin: 0 auto;
+	background-color: #eeeeee;
+    padding: 55px;
+    border-radius: 5px; 
+}	
+	
+.mortContainer p {
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+
+.mortInput {
+	width: 100%;
+	height: 20px;
+	margin: 10px 0 25px 0;
+}
+
+form h3 {
+	font-size: 24px;
+	padding: 15px 0 25px 0;
+	text-align: center;
+}
+	
+#button {
+	color: #515151;
+	background-color: rgba(0,0,0,0);
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 10px;
+	border: 2px solid #515151;
+	cursor: pointer;
+	margin-bottom: 25px;
+}
+	
+#button:hover {
+	color: #fff;
+	background-color: #515151;
+}
+
+/*Mobile Devices*/
+@media screen and (max-width: 413px) {
+	
+header {
+	width: 100%;
+	height: 560px;
+}
+
+.house-img {
+	width: 100%;
+	height: 560px;
+}
+
+.house-img h1 {
+	padding-top: 220px;
+	font-size: 3em;
+}
+
+.mortContainer {
+	width: 70%;
+	margin: 0 auto;
+	background-color: #C5C5C5;
+	padding: 35px;
+}	
+	
+.mortContainer p {
+	font-size: 14px;
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+
+.mortInput {
+	width: 95%;
+	height: 20px;
+	margin: 10px 0 25px 0;
+}
+	
+}
+
+/*Mobile Devices 2*/
+@media (min-width: 414px) and (max-width: 767px) {
+	
+header {
+	width: 100%;
+	height: 560px;
+}
+
+.house-img {
+	width: 100%;
+	height: 560px;
+}
+
+.house-img h1 {
+	padding-top: 220px;
+	font-size: 3em;
+}
+
+.mortContainer {
+	width: 70%;
+	margin: 0 auto;
+	background-color: #C5C5C5;
+	padding: 35px;
+	
+}	
+	
+.mortContainer p {
+	font-size: 18px;
+}
+
+.mortInput {
+	width: 95%;
+	height: 20px;
+	margin: 10px 0 25px 0;
+}
+	
+	
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1279px) {
+	
+header {
+	width: 100%;
+	height: 665px;
+}
+
+.house-img {
+	width: 100%;
+	height: 665px;
+}
+
+.house-img h1 {
+	padding-top: 220px;
+	font-size: 3em;
+}
+	
+.mortContainer {
+	width: 500px;
+	margin: 0 auto;
+	background-color: #C5C5C5;
+	padding: 55px;
+}	
+	
+.mortContainer p {
+	font-size: 18px;
+}
+
+.mortInput {
+	width: 100%;
+	height: 20px;
+	margin: 10px 0 25px 0;
+}
+	
+}
+
+/*Desktop*/
+@media screen and (min-width: 1280px) {
+	
+}
